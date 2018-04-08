@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="76" id="Gzo-0t-4cg" customClass="NewsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gzo-0t-4cg" id="FOe-xy-hmU">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PkM-hz-8uj">
+                        <rect key="frame" x="10" y="10" width="80" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="c4m-lA-WLk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国新闻网" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-QY-Ly1">
+                        <rect key="frame" x="100" y="50" width="66.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="习近平：把农村公路建好管好护好运营好" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01y-C4-bzn">
+                        <rect key="frame" x="100" y="10" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6万跟帖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLR-if-w2x">
+                        <rect key="frame" x="331" y="50" width="57" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="01y-C4-bzn" secondAttribute="trailing" constant="10" id="4Wl-Vc-Q9l"/>
+                    <constraint firstItem="01y-C4-bzn" firstAttribute="leading" secondItem="PkM-hz-8uj" secondAttribute="trailing" constant="10" id="83w-DQ-hB5"/>
+                    <constraint firstItem="YcP-QY-Ly1" firstAttribute="leading" secondItem="PkM-hz-8uj" secondAttribute="trailing" constant="10" id="Dxw-wk-aJ2"/>
+                    <constraint firstAttribute="bottom" secondItem="YcP-QY-Ly1" secondAttribute="bottom" constant="10" id="HeD-CZ-Wwz"/>
+                    <constraint firstAttribute="trailing" secondItem="rLR-if-w2x" secondAttribute="trailing" constant="10" id="NnQ-i9-e3E"/>
+                    <constraint firstAttribute="bottom" secondItem="rLR-if-w2x" secondAttribute="bottom" constant="10" id="RoD-ys-nAD"/>
+                    <constraint firstItem="01y-C4-bzn" firstAttribute="top" secondItem="FOe-xy-hmU" secondAttribute="top" constant="10" id="g1h-sx-e6t"/>
+                    <constraint firstAttribute="bottom" secondItem="PkM-hz-8uj" secondAttribute="bottom" constant="10" id="hg9-Oq-GDy"/>
+                    <constraint firstItem="PkM-hz-8uj" firstAttribute="leading" secondItem="FOe-xy-hmU" secondAttribute="leading" constant="10" id="lem-qv-EXi"/>
+                    <constraint firstItem="PkM-hz-8uj" firstAttribute="top" secondItem="FOe-xy-hmU" secondAttribute="top" constant="10" id="uHb-8K-LlM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="PkM-hz-8uj" id="hLj-Ex-2WO"/>
+                <outlet property="replyLabel" destination="rLR-if-w2x" id="U0Z-M7-4HM"/>
+                <outlet property="sourceLabel" destination="YcP-QY-Ly1" id="GJc-Ph-qRX"/>
+                <outlet property="titleLabel" destination="01y-C4-bzn" id="Ete-xa-VLR"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="33"/>
+        </tableViewCell>
+    </objects>
+</document>
